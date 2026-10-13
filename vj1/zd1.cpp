@@ -35,9 +35,7 @@ int main() {
         printf("%s %s %d %.2f%% \n", studenti[i].ime, studenti[i].prezime, studenti[i].bodovi, (float)studenti[i].bodovi / max_br_bodova * 100);
     }
 
-    if (!fp) {
-        free(studenti);
-    }
+    free(studenti);
 
     fclose(fp);
 
