@@ -92,7 +92,7 @@ int main() {
     insertBegin("Ime1", "Prezime1", 2000, P);
     insertEnd("Ime2", "Prezime2", 2001, P);
 
-    for (Position Q = P->next; Q != NULL; Q = Q->next)
+    for (Q = P->next; Q != NULL; Q = Q->next)
         printf("%s %s. Born: %d\n", Q->name, Q->lname, Q->year);
 
     Q = findLName("Prezime1", P);
