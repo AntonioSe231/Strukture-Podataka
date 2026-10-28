@@ -160,7 +160,7 @@ int readFile(char* fn, Position head) {
         free(temp);
     }
 
-    while (fscanf(fp, "%49s %49s %d", name, lname, &year) == 3)
+    while (fscanf(fp, "%s %s %d", name, lname, &year) == 3)
         insertEnd(name, lname, year, head);
 
     fclose(fp);
