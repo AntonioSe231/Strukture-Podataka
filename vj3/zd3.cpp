@@ -175,8 +175,8 @@ int main() {
 
     insertBegin("Ime1", "Prezime1", 2000, P);
     insertEnd("Ime2", "Prezime2", 2001, P);
-    insertAfterP("Marko", "Kovac", 1999, "Horvat", P);
-    insertBeforeP("Petra", "Babic", 2002, "Horvat", P);
+    insertAfterP("Ime3", "Prezime3", 1999, "Prezime2", P);
+    insertBeforeP("Ime4", "Prezime4", 2002, "Prezime2", P);
 
     sort("Prezime1", P);
     writeFile("popis.txt", P);
