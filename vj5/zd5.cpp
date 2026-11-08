@@ -50,9 +50,10 @@ int Pop(Position head, double* result) {
             return -1;
     }
 
-    q = p->next->next;
+    q = p->next;
+    head->next = q->next;
 
-    free(p->next);
+    free(q);
     free(p);
 
     return Push(head, *result);
